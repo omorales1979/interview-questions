@@ -9,7 +9,7 @@ function ThemeStatus({children}){
   return (
     <>
       <div aling="center">
-        <h1>Current Theme: {ThemeContext}</h1>
+        <h1>Current Theme: {theme}</h1>
         { children }
       </div>
     </>
