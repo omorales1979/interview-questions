@@ -5,7 +5,7 @@ function App() {
   const [value, setValue] = useState("");
   const [count, setCount] = useState(-1);
 
-  useEffect(()=> setCount(count+1));
+  useEffect(()=> {setCount(count+1)}, [value]); // add the variable value to verify if change
 
   const onChange = ({target})=> setValue(target.value);
 
